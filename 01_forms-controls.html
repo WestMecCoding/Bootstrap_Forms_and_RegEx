@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms 1</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Form Controls</h1>
+        <form action="" id="myAnimalForm">
+            <!-- First Name and Last Name -->
+            <fieldset class="mb-3">
+                <legend>Personal Information</legend>
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="firstName">First Name</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="Enter first name">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" class="form-control" id="lastName" placeholder="Enter last name">
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <!-- We wrap certain related form elements in a form group -->
+            <div class="form-group">
+                <!-- for accessiblity we give form inputs labels -->
+                <label for="email">email address:</label>
+                <input type="email" class="form-control" id="email" placeholder="enter your email">
+            </div>
+            <div class="form-group">
+                <!-- for accessiblity we give form inputs labels -->
+                <label for="password">password:</label>
+                <input type="password" class="form-control" id="password" placeholder="enter your password">
+                <small class="text-muted">Password must be 8 characters</small>
+            </div>
+            <!-- option group -->
+            <div class="form-group">
+                <label for="selection-list">select something</label>
+                <select name="" id="selection-list">
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                    <option value="">5</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="multi-selection-list">Select multiple {hold ctrl}</label>
+                <select multiple name="" id="multi-selection-list">
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                    <option value="">5</option>
+                </select>
+            </div>
+            <!-- end multi select -->
+            <div class="form-group">
+                <label for="text-area">Text Area</label>
+                <textarea name="" id="text-area" cols="30" rows="4" class="form-control"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="file">File Input</label>
+                <input type="file" class="form-control-file" id="file">
+            </div>
+            <div class="form-group">
+                <label for="formControlRange">example range</label>
+                <br>
+                <span>0</span> <span style="float: right;">10</span><input type="range" min="0" max="10" step="1"
+                    class="form-control-range" id="formControlRange">
+            </div>
+            <!-- end form range -->
+            <div class="form-group">
+                <label for="telephone">Your phone</label>
+                <input type="tel" id="telephone" name="phone" pattern="" required="required" class="form-control-lg">
+            </div>
+            <!-- end telephone -->
+            <div class="form-group">
+                <label for="start">Start date:</label>
+
+                <input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31" />
+            </div>
+        </form>
+</body>
+
+
+</html>
