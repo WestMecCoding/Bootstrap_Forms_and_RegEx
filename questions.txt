@@ -1,0 +1,26 @@
+Things I learned about regex validation 
+aeu-@aeou-.com is not allowed by the regex pattern.
+
+EMAILS
+What are the parts of an email?
+Local-Part:
+No @, .com, 0-9, !
+Things OK: ., -, _, a-z, A-Z
+Length: {8, 16}
+@:
+requirement: @
+
+DOMAIN:
+NOT: #, 
+OK: a-z, 0-9, -
+
+TLD(Top Level Domain):
+.com, .gov, .nz, .ca, .edu, .org
+Length: {2, 4}
+
+some.cool-email@somedomain-subdomain.edu
+
+cool_email.cool@something-cool.toplevel
+
+^[a-zA-Z0-9._-]{1,16}@[a-zA-Z0-9-]+\.[a-zA-Z]{2,4}$
+some words dabc stuff
